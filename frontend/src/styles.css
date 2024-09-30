@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Video container styles */
+.video-container {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #000;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Video control buttons */
+.video-container .stream-controls {
+  margin-top: 10px;
+}
+
+.video-container button {
+  margin: 10px 5px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Overlay component styles */
+.overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 250px;
+}
+
+.overlay input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.overlay button {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+/* List of saved overlays */
+.overlay-list {
+  margin-top: 20px;
+}
+
+.overlay-list div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.overlay-list div:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+/* Overlay delete/edit buttons */
+.overlay-list button {
+  margin-left: 5px;
+  padding: 8px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.overlay-list button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.overlay-list .edit-button {
+  background-color: #ffc107;
+}
+
+.overlay-list .edit-button:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .video-container {
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .overlay {
+    max-width: 200px;
+    font-size: 14px;
+  }
+
+  .overlay input {
+    font-size: 14px;
+  }
+
+  .overlay button {
+    font-size: 14px;
+  }
+
+  .video-container button {
+    font-size: 14px;
+  }
+
+  .overlay-list div {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .video-container {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .overlay {
+    top: 5px;
+    left: 5px;
+    max-width: 150px;
+  }
+
+  .overlay input {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .overlay button {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .video-container button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .overlay-list div {
+    padding: 10px;
+    max-width: 100%;
+    margin: 5px;
+  }
+}
+
+
+body {
+  background: linear-gradient(to right, #953cf4, #397df3);
+  color: #333;
+}
+
+.video-container {
+  background: #111;
+  border: 1px solid #444;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+.overlay input {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.overlay-list div {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.overlay-list button {
+  padding: 5px 10px;
+}
